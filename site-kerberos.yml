@@ -1,0 +1,13 @@
+#- name: Setup Kerberos Client
+#  hosts: ext-kerberos-setup
+#  roles:
+#    - ext-kerberos5-setup
+
+- name: Create user
+  hosts: ext-kerberos-create-ad-user
+  roles:
+    - ext-ad-createusers
+#- name: Verify keytabs
+#  hosts: ext-kerberos-verify-keytabs
+#  roles:
+#    - ext-kerberos-verify-keytabs
